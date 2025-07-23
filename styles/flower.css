@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Shared styles */
+.black-1 {
+  color: #252432;
+}
+.black-2 {
+  color: rgba(0, 0, 0, 1);
+}
+.gray-1 {
+  color: rgba(137, 135, 161, 1);
+}
+.gray-2 {
+  color: rgba(0, 0, 0, 0.5);
+}
+.orange {
+  color: rgba(233, 90, 8, 1);
+}
+
+/* nav styles */
+header {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  gap: 45px;
+}
+.nav-list li {
+  list-style: none;
+}
+.nav-list li a {
+  text-decoration: none;
+}
