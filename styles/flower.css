@@ -44,7 +44,6 @@ nav {
 
 /* banner styles */
 .banner {
-  border: 2px solid blue;
   margin-top: 120px;
   display: flex;
   justify-content: space-between;
@@ -120,7 +119,6 @@ nav {
 .plants-lover {
   max-width: 1140px;
   margin: 100px auto;
-  border: 1px solid green;
   margin-top: 210px;
   display: flex;
   justify-content: space-between;
@@ -129,6 +127,14 @@ nav {
 }
 .plants-lover-left {
   width: 50%;
+  position: relative;
+}
+.trusted-logo {
+  position: absolute;
+  width: 280px !important;
+  height: auto !important;
+  right: -90px;
+  top: -120px;
 }
 .plants-lover-right {
   width: 50%;
@@ -151,8 +157,21 @@ nav {
 /* deals style */
 .latest-deals {
   max-width: 1140px;
-  margin: auto;
-  border: 2px solid black;
+  margin: 0 auto;
+}
+.latest-deals-title {
+  max-width: 888px;
+  margin: 0 auto;
+  text-align: center;
+}
+.latest-deals-title h2 {
+  font-weight: 700;
+  font-size: 3.125rem;
+  margin-bottom: 16px;
+}
+.latest-deals-title p {
+  font-size: 1.375rem;
+  margin-bottom: 120px;
 }
 .latest-deals-row {
   height: 400px;
@@ -166,7 +185,6 @@ nav {
   justify-content: space-between;
 }
 .bloom {
-  border: 2px solid red;
   background-image: url(../assets/deal-bloom.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -174,12 +192,31 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 14px;
 }
-.bloom h2 {
+.offer {
+  color: white;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+.offer-link {
+  font-weight: 600;
   color: white;
 }
+.zabo h3 {
+  color: white;
+  font-weight: 700;
+  font-size: 3.375rem;
+}
+.zabo a {
+  color: white;
+  font-weight: 600;
+  font-size: 1.75rem;
+}
+
 .ana {
-  border: 2px solid green;
   background-image: url(../assets/deal-ana.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -187,14 +224,20 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 14px;
 }
 .zabo {
   width: 65%;
-  border: 2px solid blue;
   background-image: url(../assets/deal-zabo.png);
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 22px;
+  color: liner;
 }
 
 /* join section styles */
@@ -297,6 +340,9 @@ footer li a {
   .plants-lover-right {
     width: 100%;
   }
+  .latest-deals-title {
+    margin: 100px 15px;
+  }
   .latest-deals-row {
     flex-direction: column;
     margin: 100px 15px;
@@ -309,6 +355,17 @@ footer li a {
     width: 100%;
     height: 50%;
   }
+  .zabo h3 {
+    color: white;
+    font-weight: 700;
+    font-size: 1.25rem;
+  }
+  .zabo a {
+    color: white;
+    font-weight: 600;
+    font-size: 1.18rem;
+  }
+
   .join-input input {
     padding: 15px 50px;
   }
