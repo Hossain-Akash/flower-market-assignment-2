@@ -60,6 +60,7 @@ nav {
   align-items: end;
 }
 .banner h1 {
+  margin-bottom: 13px;
   font-weight: 700;
   font-size: 4rem;
 }
